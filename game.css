@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  font-family: Arial;
+}
+
+#game {
+  width: 600px;
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  background: lightblue;
+  position: relative;
+}
+
+#player {
+  width: 45px;
+  height: 40px;
+  background: rgb(109, 193, 109);
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+#obstacle {
+  width: 30px;
+  height: 40px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 570px; /* start at corner/edge */
+}
+
+#Rick {
+  width: 30px;
+  height: 40px;
+  bottom: 0;
+  left: 570px; /* start at corner/edge */
+}
+
+#ending-screen {
+  display: none;
+  padding: 20px;
+}
