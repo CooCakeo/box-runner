@@ -8,6 +8,8 @@ let velocity = 0;
 const jumpPower = 12;
 const gravity = 0.7;
 
+const jumpSound = new Audio("jump.mp3");
+
 const scoreDisplay = document.getElementById("score"); //keeps it like that forever.
 let score = 0; // lenient variable that can change over time, unlike const which is constant and cannot be changed
 
@@ -21,6 +23,7 @@ let obstacleSpeed = 5;
 document.addEventListener("keydown", (event) => {
   if (event.code === "Space" && y === 0 && gameRunning) {
     velocity = jumpPower;
+    jumpSound.play();
   }
 });
 
