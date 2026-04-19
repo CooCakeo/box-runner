@@ -37,7 +37,7 @@ setInterval(() => {
     scoreDisplay.textContent = "Score: " + score;
 
     if (score % 100 === 0) {
-      obstacleSpeed += 0.5;
+      obstacleSpeed += 0.25;
     }
   }
 
